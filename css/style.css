@@ -1,0 +1,136 @@
+@font-face {
+  font-family: "Open Sans";
+  src:  url("../fonts/Open Sans/OpenSans-Normal.woff2") format("woff2");
+        url("../fonts/Open Sans/OpenSans-Normal.woff") format("woff");
+        url("../fonts/Open Sans/OpenSans-Normal.ttf") format("ttf");
+        font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src:  url("../fonts/Open Sans/OpenSans-Bold.woff2") format("woff2");
+        url("../fonts/Open Sans/OpenSans-Bold.woff") format("woff");
+        url("../fonts/Open Sans/OpenSans-Bold.ttf") format("ttf");
+        font-weight: bold;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+.page-header {
+  display: flex;
+  height: 126px;
+  background-color: #002f2f;
+  margin: 0 auto;
+
+}
+
+.header__container {
+  width: 1660px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.page-header__logo-wrap {
+  width: 34px;
+  height: 85px;
+}
+
+.main-nav {
+  width: 1030px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  list-style: none;
+
+}
+
+.main-nav__link {
+  text-decoration: none;
+  color: #fefefe;
+  font-size: 24px;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts__phone {
+  text-decoration: none;
+  color: #fefefe;
+  font-size: 32px;
+}
+
+.contacts__text {
+  color: #fefefe;
+  font-size: 20px;
+}
+
+
+.appartments-item {
+  width: 320px;
+  height: 522px;
+  border-radius: 3px;
+  border: 1px solid #a7a37e;
+  text-align: center;
+}
+
+.appartments-item__img-wrap {
+  width: 213px;
+  height: 191px;
+}
+
+.appartments-item__title {
+  color: #002f2f;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.characters {
+  display: inline-block;
+  vertical-align: middle;
+  width: 220px;
+}
+
+.characters__line {
+  display: inline-block;
+  width: 3px;
+  height: 33px;
+  border-radius: 2px;
+  background-color: #046380;
+}
+
+.characters__repair {
+  display: inline-block;
+  color: #046380;
+  font-size: 16px;
+}
+
+.characters__area {
+  display: inline-block;
+  font-size: 18px;
+}
+
+.area__text {
+  font-size: 13px;
+}
+
+.characters__floor {
+  display: inline-block;
+  font-size: 18px;
+}
+
+.floor__text {
+  font-size: 13px;
+}
