@@ -43,14 +43,14 @@
     </div>
   </header>
 
-  <main>
+  <main class="main-page">
     <div class="container">
       <p class="main-page__text">Найдено 666 квартир</p>
       <section class="appartments">
-        <span class="appartments__sorting">Сортировать</span>
+        <span class="appartments__sorting">Сортировать по:</span>
         <article class="appartments-item">
           <div class="appartments-item__img-wrap">
-            <img src="" alt="план квартиры" class="appartments-item__img">
+            <img src="img/flat5.png" alt="план квартиры" class="appartments-item__img">
           </div>
           <h2 class="appartments-item__title">Студия №44</h2>
           <div class="appartments-item__characters  characters">
@@ -61,7 +61,8 @@
           </div>
           <div class="appartments-item__price">1 900 000 руб</div>
           <footer class="appartments-item__footer  appartments-footer">
-            <span class="appartments-footer__text">Забронировано</span>
+            <span class="appartments-footer__text--free">Свободно</span>
+            <span class="appartments-footer__text--reserved">Забронировано</span>
           </footer>
           <div class="appartments-item__star"></div>
         </article>
@@ -75,12 +76,13 @@
         <span class="footer-textblock__call">Успей купить!</span>
         <p class="footer-textblock__text">Подпишись и успей словить все акции</p>
       </div>
-      <form action="#" class="footer-form">
-        <input class="footer-form__input" type="text" name="email" placeholder="E-mail">
+      <form id="form_id" method="post" action="#" class="footer-form" onsubmit="javascript:return validate('form_id','email');">
+        <input class="footer-form__input" type="text" name="email" placeholder="E-mail" id="email">
         <input type="checkbox" class="footer-form__checkbox" checked>
+        <input type="submit" value="Подписаться" class="footer-form__btn">
       </form>
-      <button class="footer-button btn">Подписаться</button>
     </div>
   </footer>
+  <script src="scripts/script.js"></script>
 </body>
 </html>
