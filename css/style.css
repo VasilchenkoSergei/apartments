@@ -276,6 +276,21 @@ body {
   top: 15px;
   left: 70px;
 }
+
+.appartments-item:nth-child(4) .appartments-footer {
+  background-color: #a1a1a1;
+}
+
+.appartments-item:nth-child(4):hover .appartments-footer {
+  background-color: #a1a1a1;
+}
+
+.appartments-item:nth-child(4) .appartments-footer .appartments-footer__text--free,
+.appartments-item:nth-child(4) .appartments-footer .appartments-footer__text--reserved {
+  display: none;
+  
+}
+
 .appartments-item:hover .appartments-footer {
   background-color: #a7a37e;
 }
@@ -682,7 +697,7 @@ body {
 
 .appartments-item__title {
   font-size: 24px;
-  margin: 50px 0;
+  margin: 40px 0;
 }
 
 .appartments-item__price {
