@@ -20,13 +20,53 @@ $(document).ready(function(){
           $('#toTop').fadeIn();
         } else {
           $('#toTop').fadeOut();
-        }
-                });
+  }
+  });
 
   $('#toTop').click(function() {
     $('body,html').animate({scrollTop:0},800);
     });
   });
+
+  $('.main-nav__link').on('click', function() {
+  $(this).css({'color': '#900060'});
+    });
+
+
+
+
+  $('.appartments-item__star').on('click', function() {
+  $(this).css({'background-image':'url(img/star-dark.png)'});
+  // $(this).css({'background-image':'url(img/star.png)'});
+    });
+
+
+ // $('.appartments-item__star').click(function() { 
+ //      $(this).toggle(function() { 
+ //      $(this).css({'background-image':'url(img/star-dark.png)'}); 
+
+ //      }); 
+ //     }); 
+
+// $('.appartments-item__star').click(function() {
+//     $('.appartments-item__star').toggle();
+//     $(this).toggleClass('active');
+//     return false;
+// });
+
+// $('.appartments-item__star').click(function() {
+// $('.appartments-item__star').toggle(function () {
+//     $(".appartments-item__star").addClass(".appartments-item__star--active");
+// }, function () {
+//     $(".appartments-item__star").removeClass(".appartments-item__star--active");
+// });
+// });
+
+
+  $('.appartments-item').on('click', function() {
+  $(this).children('.appartments-footer').css({'background-color':'#a7a37e'});
+
+    });
 
 
 
