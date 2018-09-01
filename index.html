@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="appartments sale">
   <title>Appartments</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
@@ -285,10 +286,10 @@
           </footer>
           <div class="appartments-item__star"></div>
         </article>
-        <button class="main-page__button">Показать еще 20</button>
+        <button class="main-page__button btn">Показать еще 20</button>
       </section>
     </div>
-    <button class="up-button" id="toTop"></button>
+    <button class="top-button btn" id="toTop"></button>
   </main>
 
   <footer class="footer">
@@ -299,9 +300,9 @@
       </div>
       <form id="form_id" method="post" action="#" class="footer-form" onsubmit="javascript:return validate('form_id','email');">
         <input class="footer-form__input" type="text" name="email" placeholder=" E-mail" id="email"><br>
-        <input type="checkbox" class="footer-form__checkbox" checked>
+        <input type="checkbox" class="footer-form__checkbox" id="checkbox" checked>
         <input type="submit" value="Подписаться" class="footer-form__btn">
-        <span class="footer-form__text">подписаться на новости</span>
+        <label for ="checkbox" class="footer-form__text">подписаться на новости</label>
       </form>
     </div>
   </footer>
