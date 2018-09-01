@@ -65,9 +65,22 @@ $(document).ready(function(){
 
   $('.appartments-item').on('click', function() {
   $(this).children('.appartments-footer').css({'background-color':'#a7a37e'});
-
+  $(this).children('.appartments-footer').children('.appartments-footer__text--free').css({'display':'none'});
+  $(this).children('.appartments-footer').children('.appartments-footer__text--reserved').css({'display':'block'});
     });
 
+  // $('.appartments-item').on('click', function() {
+  // $(this).children('.appartments-footer').css({'background-color':'red'});
+  // $(this).children('.appartments-footer').children('.appartments-footer__text--free').css({'display':'block'});
+  // $(this).children('.appartments-footer').children('.appartments-footer__text--reserved').css({'display':'none'});
+  //   });
+
+  // $('.appartments-item').on('click', function() {
+  // $(this).children('.appartments-footer').toggleClass('.appartments-footer__active');
+  // $(this).children('.appartments-footer').children('.appartments-footer__text--free').toggleClass('.free--active');
+  // $(this).children('.appartments-footer').children('.appartments-footer__text--reserved').toggleClass('.reserved--active');
+  // $(this).toggle();
+  //   });
 
 
 
