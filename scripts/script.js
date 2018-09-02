@@ -42,9 +42,9 @@ $(document).ready(function(){
 
 // ПОСЕЩЕННЫЕ ССЫЛКИ
 
-  // $('.main-nav__link').on('click', function() {
-  // $(this).css({'color': '#900060'});
-  // });
+  $('.main-nav__link').on('click', function() {
+  $(this).css({'color': '#900060'});
+  });
 
 
 
@@ -82,9 +82,6 @@ $(document).ready(function(){
     }
 
   });
-
-
-
 
 
 })();
