@@ -58,7 +58,7 @@
           <span class="sorting__price">По цене</span>
           <span class="sorting__room">По комнатам</span>
         </div>
-        <article class="appartments-item">
+        <article class="appartments-item" tabindex="0">
           <div class="appartments-item__img-wrap">
             <img src="img/flat1.png" alt="план квартиры" class="appartments-item__img">
           </div>
@@ -78,7 +78,7 @@
           <div class="appartments-item__star"></div>
         </article>
 
-        <article class="appartments-item">
+        <article class="appartments-item" tabindex="0">
           <div class="appartments-item__img-wrap">
             <img src="img/flat2.png" alt="план квартиры" class="appartments-item__img">
           </div>
@@ -97,7 +97,7 @@
           <div class="appartments-item__star"></div>
         </article>
 
-        <article class="appartments-item">
+        <article class="appartments-item" tabindex="0">
           <div class="appartments-item__img-wrap">
             <img src="img/flat3.png" alt="план квартиры" class="appartments-item__img">
           </div>
@@ -115,7 +115,7 @@
           <div class="appartments-item__star"></div>
         </article>
 
-        <article class="appartments-item">
+        <article class="appartments-item" tabindex="0">
           <div class="appartments-item__img-wrap">
             <img src="img/flat4.png" alt="план квартиры" class="appartments-item__img">
           </div>
@@ -134,7 +134,7 @@
           <div class="appartments-item__star"></div>
         </article>
 
-        <article class="appartments-item">
+        <article class="appartments-item" tabindex="0">
           <div class="appartments-item__img-wrap">
             <img src="img/flat5.png" alt="план квартиры" class="appartments-item__img">
           </div>
@@ -154,7 +154,7 @@
           <div class="appartments-item__star"></div>
         </article>
         
-        <article class="appartments-item">
+        <article class="appartments-item" tabindex="0">
           <div class="appartments-item__img-wrap">
             <img src="img/flat6.png" alt="план квартиры" class="appartments-item__img">
           </div>
@@ -173,7 +173,7 @@
           <div class="appartments-item__star"></div>
         </article>
 
-        <article class="appartments-item">
+        <article class="appartments-item" tabindex="0">
           <div class="appartments-item__img-wrap">
             <img src="img/flat7.png" alt="план квартиры" class="appartments-item__img">
           </div>
@@ -192,7 +192,7 @@
           <div class="appartments-item__star"></div>
         </article>
 
-        <article class="appartments-item">
+        <article class="appartments-item" tabindex="0">
           <div class="appartments-item__img-wrap">
             <img src="img/flat8.png" alt="план квартиры" class="appartments-item__img">
           </div>
@@ -211,7 +211,7 @@
           <div class="appartments-item__star"></div>
         </article>
 
-        <article class="appartments-item">
+        <article class="appartments-item" tabindex="0">
           <div class="appartments-item__img-wrap">
             <img src="img/flat9.png" alt="план квартиры" class="appartments-item__img">
           </div>
@@ -230,7 +230,7 @@
           <div class="appartments-item__star"></div>
         </article>
 
-        <article class="appartments-item">
+        <article class="appartments-item" tabindex="0">
           <div class="appartments-item__img-wrap">
             <img src="img/flat10.png" alt="план квартиры" class="appartments-item__img">
           </div>
@@ -249,7 +249,7 @@
           <div class="appartments-item__star"></div>
         </article>
 
-        <article class="appartments-item">
+        <article class="appartments-item" tabindex="0">
           <div class="appartments-item__img-wrap">
             <img src="img/flat11.png" alt="план квартиры" class="appartments-item__img">
           </div>
@@ -268,7 +268,7 @@
           <div class="appartments-item__star"></div>
         </article>
 
-        <article class="appartments-item">
+        <article class="appartments-item" tabindex="0">
           <div class="appartments-item__img-wrap">
             <img src="img/flat12.png" alt="план квартиры" class="appartments-item__img">
           </div>
@@ -299,10 +299,13 @@
         <p class="footer-textblock__text">Подпишись и успей словить все акции</p>
       </div>
       <form id="form_id" method="post" action="#" class="footer-form" onsubmit="javascript:return validate('form_id','email');">
-        <input class="footer-form__input" type="text" name="email" placeholder=" E-mail" id="email"><br>
-        <input type="checkbox" class="footer-form__checkbox" id="checkbox" checked>
-        <input type="submit" value="Подписаться" class="footer-form__btn">
-        <label for ="checkbox" class="footer-form__text">подписаться на новости</label>
+        <label><input class="footer-form__input" type="text" name="email" placeholder=" E-mail" id="email"></label><br>
+        <label class="checkbox-label">
+          <input type="checkbox" class="footer-form__checkbox  checkbox" id="checkbox" checked>
+          <span class="checkbox__custom" tabindex="0"></span>
+          <span class="checkbox__text">подписаться на новости</span>
+        </label>
+        <input type="submit" value="Подписаться" class="footer-form__btn" tabindex="0">
       </form>
     </div>
   </footer>

@@ -34,7 +34,7 @@ body {
 }
 
 .header__container {
-  width: 100%;
+  width: 90%;
   margin: 0 auto;
   display: -webkit-flex;
   display: -ms-flex;
@@ -112,18 +112,20 @@ body {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding-right: 100px;
+  padding-right: 80px;
 }
 
 .contacts__phone {
   text-decoration: none;
   color: #fefefe;
   font-size: 18px;
+  padding-left: 20px;
 }
 
 .contacts__text {
   color: #fefefe;
   font-size: 14px;
+  padding-left: 20px;
 }
 
 .main-page {
@@ -255,7 +257,8 @@ body {
   display: block;
   width: 35px;
   height: 20px;
-  background-image: url(../img/17-icon.png);
+  background-image: url(../img/sprite.png);
+  background-position: -195px -10px;
   background-repeat: no-repeat;
   position: absolute;
   top: 15px;
@@ -268,7 +271,8 @@ body {
   display: block;
   width: 75px;
   height: 20px;
-  background-image: url(../img/priceshock-icon.png);
+  background-image: url(../img/sprite.png);
+  background-position: -250px -10px;
   background-repeat: no-repeat;
   position: absolute;
   top: 15px;
@@ -282,7 +286,8 @@ body {
   display: block;
   width: 35px;
   height: 20px;
-  background-image: url(../img/6-icon.png);
+  background-image: url(../img/sprite.png);
+  background-position: -87px -10px;
   background-repeat: no-repeat;
   position: absolute;
   top: 15px;
@@ -294,7 +299,8 @@ body {
   display: block;
   width: 35px;
   height: 20px;
-  background-image: url(../img/9-icon.png);
+  background-image: url(../img/sprite.png);
+  background-position: -141px -10px;
   background-repeat: no-repeat;
   position: absolute;
   top: 15px;
@@ -467,18 +473,11 @@ body {
   position: absolute;
   width: 19px;
   height: 18px;
-  background-image: url(../img/star.png);
+  background-image: url(../img/sprite.png);
+  background-position: -10px -10px;
   right: 18px;
   top: 18px;
-}
-
-.appartments-item__star .active {
-  position: absolute;
-  width: 19px;
-  height: 18px;
-  background-image: url(../img/star-dark.png);
-  right: 18px;
-  top: 18px;
+  z-index: 10;
 }
 
 .main-page__button {
@@ -549,13 +548,14 @@ body {
   width: 240px;
   margin: 0 auto;
   position: relative;
+  text-align: left;
 }
 
 .footer-form__input {
   width: 230px;
   height: 35px;
   color: #000;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 .footer-form__input:hover {
@@ -563,17 +563,34 @@ body {
 }
 
 .footer-form__checkbox {
-  margin-left: 10px;
-  color: #fff;
-  position: absolute;
-  bottom: 50px;
-  left: 5px;
-  width: 15px;
-  height: 15px;
+  display: none;
 }
 
-.footer-form__checkbox:checked {
-  box-shadow: 0 0 3px 3px #efecca;
+.checkbox__custom {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ccc;
+  border-radius: 3px;
+}
+
+.checkbox__custom,
+.checkbox__text {
+  display: inline-block;
+  vertical-align: middle;
+  color: #fff;
+}
+
+.footer-form__checkbox:checked + .checkbox__custom::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  bottom: 2px;
+  left: 2px;
+  background: #000;
+  border-radius: 2px;
 }
 
 .footer-form__btn {
@@ -688,7 +705,7 @@ body {
 @media (min-width: 1320px) {
 
 .header__container {
-  min-width: 1250px;
+  width: 1650px;
 }
 
 .page-header__burger {
@@ -804,6 +821,7 @@ body {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+  position: relative;
 }
 
 .footer-form__input {
@@ -816,17 +834,10 @@ body {
   margin-top: 0;
 }
 
-.footer-form__checkbox {
+.checkbox-label {
+  position: absolute;
+  left: 0;
   bottom: -10px;
-  left: 2;
-  margin-left: 0;
-}
-
-.footer-form__text {
-  margin: 0;
-  padding: 0;
-  bottom: -10px;
-  left: 15px;
 }
 
 }
