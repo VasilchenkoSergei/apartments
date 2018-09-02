@@ -16,7 +16,7 @@ $(document).ready(function(){
   $('.page-header__burger').on('click', function() {
   $('.main-nav').toggleClass('.active');
   $('.main-nav').toggle();
-    });
+});
 
 
 // КНОПКА ВВЕРХ
