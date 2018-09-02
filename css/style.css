@@ -245,6 +245,7 @@ body {
   position: relative;
   padding-top: 45px;
   margin-bottom: 40px;
+  justify-content: space-between;
 }
 
 .appartments-item:hover {
@@ -422,14 +423,13 @@ body {
   font-weight: bold;
   width: 210px;
   text-align: left;
+  padding-bottom: 30px;
 }
 
 .appartments-footer {
   width: 100%;
   height: 36px;
   background-color: #002f2f;
-  position: absolute;
-  bottom: 0;
 }
 
 .appartments-footer__active {
@@ -626,13 +626,6 @@ body {
 }
 
 
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
-.appartments-footer {
-
-  position: relative;
-bottom: -20px;
-}
-}
 
 
 
