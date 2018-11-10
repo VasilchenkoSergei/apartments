@@ -2,12 +2,15 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
+  <meta name="description" content="apartments sale with low prices">
+  <meta name="keywords" content="квартиры, покупка квартир, апартаменты">
+  <meta name="title" content="Продажа/покупка квартир">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="appartments sale with low prices">
-  <title>Appartments</title>
-  <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+  <meta name="robots" content="all">
+  <title>Apartments</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="img/favicon.png" type="image/png">
 </head>
 <body>
   <header class="page-header">
@@ -20,29 +23,31 @@
         <div class="burger-line"></div>
         <div class="burger-line"></div>
       </div>
-      <ul class="page-header__main-nav  main-nav">
-        <li class="main-nav__item">
-          <a href="#" class="main-nav__link">Объекты</a>
-        </li>
-        <li class="main-nav__item">
-          <a href="#" class="main-nav__link">Компания</a>
-        </li>
-        <li class="main-nav__item">
-          <a href="#" class="main-nav__link">Как купить</a>
-        </li>
-        <li class="main-nav__item">
-          <a href="#" class="main-nav__link">Агентам</a>
-        </li>
-        <li class="main-nav__item">
-          <a href="#" class="main-nav__link">Регионам</a>
-        </li>
-        <li class="main-nav__item">
-          <a href="#" class="main-nav__link">Акции</a>
-        </li>
-        <li class="main-nav__item">
-          <a href="#" class="main-nav__link">Контакты</a>
-        </li>
-      </ul>
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">Объекты</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">Компания</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">Как купить</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">Агентам</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">Регионам</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">Акции</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
       <div class="main-header__contacts  contacts">
         <a href="tel:+7888888898" class="contacts__phone">8 888 88 88 98</a>
         <span class="contacts__text">Звони скорее!</span>
@@ -71,7 +76,8 @@
             <div class="characters__area  area">28 м<sup>2</sup><br><span class="area__text">площадь</span></div>
             <div class="characters__floor  floor">12/14<br><span class="floor__text">этаж</span></div>
           </div>
-          <div class="appartments-item__price">1 900 000 руб</div>
+          <div class="appartments-item__price">2 000 000 руб</div>
+          <div class="appartments-item__room">0</div>
           <footer class="appartments-item__footer  appartments-footer">
             <span class="appartments-footer__text--free">Свободно</span>
             <span class="appartments-footer__text--reserved">Забронировано</span>
@@ -90,7 +96,8 @@
             <div class="characters__area  area">65 м<sup>2</sup><br><span class="area__text">площадь</span></div>
             <div class="characters__floor  floor">6/6<br><span class="floor__text">этаж</span></div>
           </div>
-          <div class="appartments-item__price">1 666 666 руб</div>
+          <div class="appartments-item__price">5 600 000 руб</div>
+          <div class="appartments-item__room">1</div>
           <footer class="appartments-item__footer  appartments-footer">
             <span class="appartments-footer__text--free">Свободно</span>
             <span class="appartments-footer__text--reserved">Забронировано</span>
@@ -98,7 +105,7 @@
           <div class="appartments-item__star"></div>
         </article>
 
-        <article class="appartments-item" tabindex="0">
+        <article class="appartments-item sold-item" tabindex="0">
           <div class="appartments-item__img-wrap">
             <img src="img/flat3.png" alt="план квартиры" class="appartments-item__img" title="Двухкомнатная №567">
           </div>
@@ -110,6 +117,7 @@
             <div class="characters__floor  floor">7/14<br><span class="floor__text">этаж</span></div>
           </div>
           <div class="appartments-item__price">5 900 000 руб</div>
+          <div class="appartments-item__room">2</div>
           <footer class="appartments-item__footer  appartments-footer">
             <span class="appartments-footer__text--sold">Продано</span>
           </footer>
@@ -127,7 +135,8 @@
             <div class="characters__area  area">56 м<sup>2</sup><br><span class="area__text">площадь</span></div>
             <div class="characters__floor  floor">1/14<br><span class="floor__text">этаж</span></div>
           </div>
-          <div class="appartments-item__price">12 900 000 руб</div>
+          <div class="appartments-item__price">12 000 000 руб</div>
+          <div class="appartments-item__room">3</div>
           <footer class="appartments-item__footer  appartments-footer">
             <span class="appartments-footer__text--free">Свободно</span>
             <span class="appartments-footer__text--reserved">Забронировано</span>
@@ -147,7 +156,8 @@
             <div class="characters__area  area">18 м<sup>2</sup><br><span class="area__text">площадь</span></div>
             <div class="characters__floor  floor">12/14<br><span class="floor__text">этаж</span></div>
           </div>
-          <div class="appartments-item__price">1 900 000 руб</div>
+          <div class="appartments-item__price">8 400 000 руб</div>
+          <div class="appartments-item__room">0</div>
           <footer class="appartments-item__footer  appartments-footer">
             <span class="appartments-footer__text--free">Свободно</span>
             <span class="appartments-footer__text--reserved">Забронировано</span>
@@ -166,7 +176,8 @@
             <div class="characters__area  area">98 м<sup>2</sup><br><span class="area__text">площадь</span></div>
             <div class="characters__floor  floor">14/14<br><span class="floor__text">этаж</span></div>
           </div>
-          <div class="appartments-item__price">23 900 000 руб</div>
+          <div class="appartments-item__price">6 100 000 руб</div>
+          <div class="appartments-item__room">4</div>
           <footer class="appartments-item__footer  appartments-footer">
             <span class="appartments-footer__text--free">Свободно</span>
             <span class="appartments-footer__text--reserved">Забронировано</span>
@@ -186,6 +197,7 @@
             <div class="characters__floor  floor">3/6<br><span class="floor__text">этаж</span></div>
           </div>
           <div class="appartments-item__price">5 666 666 руб</div>
+          <div class="appartments-item__room">1</div>
           <footer class="appartments-item__footer  appartments-footer">
             <span class="appartments-footer__text--free">Свободно</span>
             <span class="appartments-footer__text--reserved">Забронировано</span>
@@ -205,6 +217,7 @@
             <div class="characters__floor  floor">1/6<br><span class="floor__text">этаж</span></div>
           </div>
           <div class="appartments-item__price">5 696 664 руб</div>
+          <div class="appartments-item__room">3</div>
           <footer class="appartments-item__footer  appartments-footer">
             <span class="appartments-footer__text--free">Свободно</span>
             <span class="appartments-footer__text--reserved">Забронировано</span>
@@ -224,6 +237,7 @@
             <div class="characters__floor  floor">3/14<br><span class="floor__text">этаж</span></div>
           </div>
           <div class="appartments-item__price">1 200 000 руб</div>
+          <div class="appartments-item__room">1</div>
           <footer class="appartments-item__footer  appartments-footer">
             <span class="appartments-footer__text--free">Свободно</span>
             <span class="appartments-footer__text--reserved">Забронировано</span>
@@ -244,6 +258,7 @@
             <div class="characters__floor  floor">6/14<br><span class="floor__text">этаж</span></div>
           </div>
           <div class="appartments-item__price">1 500 500 руб</div>
+          <div class="appartments-item__room">0</div>
           <footer class="appartments-item__footer  appartments-footer">
             <span class="appartments-footer__text--free">Свободно</span>
             <span class="appartments-footer__text--reserved">Забронировано</span>
@@ -263,6 +278,7 @@
             <div class="characters__floor  floor">3/14<br><span class="floor__text">этаж</span></div>
           </div>
           <div class="appartments-item__price">6 200 000 руб</div>
+          <div class="appartments-item__room">1</div>
           <footer class="appartments-item__footer  appartments-footer">
             <span class="appartments-footer__text--free">Свободно</span>
             <span class="appartments-footer__text--reserved">Забронировано</span>
@@ -282,6 +298,7 @@
             <div class="characters__floor  floor">3/14<br><span class="floor__text">этаж</span></div>
           </div>
           <div class="appartments-item__price">5 255 006 руб</div>
+          <div class="appartments-item__room">2</div>
           <footer class="appartments-item__footer  appartments-footer">
             <span class="appartments-footer__text--free">Свободно</span>
             <span class="appartments-footer__text--reserved">Забронировано</span>
@@ -301,7 +318,7 @@
         <p class="footer-textblock__text">Подпишись и успей словить все акции</p>
       </div>
       <form id="form_id" method="post" action="#" class="footer-form" onsubmit="javascript:return validate('form_id','email');">
-        <label><input class="footer-form__input" type="text" name="email" placeholder=" E-mail" id="email"></label><br>
+        <label><input class="footer-form__input" type="email" name="email" placeholder=" E-mail" id="email" required></label><br>
         <label class="checkbox-label">
           <input type="checkbox" class="footer-form__checkbox  checkbox" id="checkbox" checked>
           <span class="checkbox__custom" tabindex="0"></span>

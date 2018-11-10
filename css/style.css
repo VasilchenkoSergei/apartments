@@ -74,14 +74,18 @@ body {
 
 .main-nav {
   display: none;
+}
+
+.main-nav__list {
+  padding: 0;
+  list-style: none;
   width: 100%;
   height: 350px;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
   padding: 0 30px;
-  margin: 0;
-  list-style: none;
+  margin: 0 auto;
   position: absolute;
   top: 126px;
   left: 0;
@@ -102,7 +106,12 @@ body {
 }
 
 .main-nav__link:hover {
-  text-decoration: underline;
+  border-bottom: 2px solid #fefefe;
+}
+
+.main-nav__link:active {
+  color: blue;
+  border-bottom: 2px solid blue;
 }
 
 .contacts {
@@ -191,6 +200,7 @@ body {
   font-size: 10px;
   padding-left: 15px;
   position: relative;
+  cursor: pointer;
 }
 
 .sorting__price:after {
@@ -210,6 +220,7 @@ body {
   color: #002f2f;
   font-size: 10px;
   padding-left: 30px;
+  cursor: pointer;
 }
 
 .sorting__room:hover {
@@ -320,7 +331,7 @@ body {
   left: 70px;
 }
 
-.appartments-item:nth-child(4) .appartments-footer {
+.sold-item .appartments-footer {
   background-color: #a1a1a1;
 }
 
@@ -425,6 +436,10 @@ body {
   padding-bottom: 30px;
 }
 
+.appartments-item__room {
+  display: none;
+}
+
 .appartments-footer {
   width: 100%;
   height: 36px;
@@ -476,7 +491,7 @@ body {
   background-position: -10px -10px;
   right: 18px;
   top: 18px;
-  z-index: 10;
+  z-index: 100;
 }
 
 .main-page__button {
@@ -500,6 +515,7 @@ body {
 }
 
 .top-button {
+  display: none;
   width: 50px;
   height: 50px;
   background-image: url(../img/up-icon.png);
@@ -608,10 +624,6 @@ body {
   cursor: pointer;
 }
 
-.footer-form__btn:visited {
-  border: 2px solid red;
-}
-
 .footer-form__text {
   width: 230px;
   height: 20px;
@@ -710,6 +722,10 @@ body {
 }
 
 .main-nav {
+  display: block;
+}
+
+.main-nav__list {
   width: 1030px;
   height: 126px;
   display: -webkit-flex;
@@ -725,7 +741,6 @@ body {
   -ms-flex-align: center;
   align-items: center;
   padding: 0 20px;
-  list-style: none;
   position: static;
 }
 
