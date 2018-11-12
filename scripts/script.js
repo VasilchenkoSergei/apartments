@@ -124,79 +124,27 @@ document.querySelector('.main-page__button').onclick = function() {
 
 // СОРТИРОВКА
 
-var priceBtn = document.querySelector('.sorting__price');
-var toggle = false;
 
-priceBtn.addEventListener('click', function(){
-  var items = document.querySelectorAll('.appartments-item');
-  var parent = document.querySelector('.appartments');
-var SortElements = new Object();
-items.forEach(function(item, indx){
-  var itemValue = parseInt(item.querySelector('.appartments-item__price').textContent.replace('руб', '').replace(/\s+/g, ''));
-  SortElements[itemValue] = {'element': item, 'index': indx} ;
+document.querySelector('.sorting__price').addEventListener("click", () => {
+  const elements = document.querySelectorAll('.appartments-item');
+  const sorted = [...elements].sort((a, b) => {
+    const priceA = a.querySelector(".appartments-item__price");
+    const priceB = b.querySelector(".appartments-item__price");
+    const getPrice = (el) => parseInt(el.innerHTML.replace(/ /g, ""));
+    return getPrice(priceA) - getPrice(priceB);
+  });
+  const resultEl = document.querySelector(".appartments");
+  sorted.forEach(el => resultEl.appendChild(el));
 });
-var keys = Object.keys(SortElements);
-function compareNumeric1(a, b) {
-  a = parseInt(a);
-  b = parseInt(b);
-  if (a < b) return 1;
-  if (a > b) return -1;
-}
-  function compareNumeric2(a, b) {
-  a = parseInt(a);
-  b = parseInt(b);
-  if (a > b) return 1;
-  if (a < b) return -1;
-}
-if(toggle === false){
-  keys.sort(compareNumeric1);
-  toggle = !toggle;
-} else {
-  keys.sort(compareNumeric2);
-  toggle = !toggle;
-}
 
-keys.map(function(key, indx){
-  parent.insertAdjacentElement('beforeend', SortElements[key]['element']);
-  SortElements[key]['index'] = indx;
+document.querySelector('.sorting__room').addEventListener("click", () => {
+  const elements = document.querySelectorAll('.appartments-item');
+  const sorted = [...elements].sort((a, b) => {
+    const roomA = a.querySelector(".appartments-item__room");
+    const roomB = b.querySelector(".appartments-item__room");
+    const getRoom = (el) => el.innerHTML;
+    return getRoom(roomA) - getRoom(roomB);
+  });
+  const resultEl = document.querySelector(".appartments");
+  sorted.forEach(el => resultEl.appendChild(el));
 });
-  return toggle;
-}, toggle);
-
-
-// let btn = document.querySelector('.sorting__room');
-// let toggle = false;
-
-// btn.addEventListener('click', function(){
-//   let items = document.querySelectorAll('.appartments-item');
-//   let parent = document.querySelector('.appartments');
-// let SortElements = new Object();
-// items.forEach(function(item, indx){
-//   let itemValue = item.querySelector('.appartments-item__room');
-//   SortElements[itemValue] = {'element': item, 'index': indx} ;
-// });
-// let keys = Object.keys(SortElements);
-// function compareNumeric1(a, b) {
-//   if (a < b) return 1;
-//   if (a > b) return -1;
-// }
-//   function compareNumeric2(a, b) {
-//   if (a > b) return 1;
-//   if (a < b) return -1;
-// }
-// if(toggle === false){
-//   keys.sort(compareNumeric1);
-//   toggle = !toggle;
-// } else {
-//   keys.sort(compareNumeric2);
-//   toggle = !toggle;
-// }
-
-// keys.map(function(key, indx){
-//   parent.insertAdjacentElement('beforeend', SortElements[key]['element']);
-//   SortElements[key]['index'] = indx;
-// });
-//   return toggle;
-// }, toggle);
-
-
