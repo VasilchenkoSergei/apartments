@@ -491,7 +491,7 @@ body {
   background-position: -10px -10px;
   right: 18px;
   top: 18px;
-  z-index: 100;
+  z-index: 5;
 }
 
 .main-page__button {
